@@ -1,0 +1,19 @@
+{
+	"version": "0.7.0",
+	"configurations": [
+		{
+			"name": "Love Letter",
+			"type": "node",
+			"program": "problems/loveLetter/loveLetter.js",
+			"cwd": "problems/loveLetter",
+			"stopOnEntry": false
+		},
+		{
+			"name": "Service Lane",
+			"type": "node",
+			"program": "problems/serviceLane/serviceLane.js",
+			"cwd": "problems/serviceLane",
+			"stopOnEntry": false
+		}
+	]
+}
