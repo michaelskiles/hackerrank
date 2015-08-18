@@ -3,30 +3,26 @@ function processData(input) {
         testCaseCount = testCases.shift();
 
     for (var i = 0; i < testCaseCount; i++) {
-        console.log(testCases[i]);
-        generatePalindrome(testCases[i]);
+        outputMinimumOpertations(testCases[i]);
     }
 }
 
-function generatePalindrome(input) {
+function outputMinimumOpertations(word) {
 
     var operationCount = 0,
-        reverseInput = input.reverse();
-    while (input !== reverseInput) {
+        reverseWord = word.reverse();
 
-        var char = input.highestLetter();
-        input = input.replace(char, String.fromCharCode(char.charCodeAt(0) - 1));
+    for (var i = 0, j = word.length; i < j; i++) {
+        if (word.charCodeAt(i) > reverseWord.charCodeAt(i)) {
+            operationCount += word.charCodeAt(i) - reverseWord.charCodeAt(i)
+        }
     }
-    console.log(operationCount);
 
+    console.log(operationCount);
 }
 
 String.prototype.reverse = function () {
     return this.split('').reverse().join('');
-};
-
-String.prototype.highestLetter = function () {
-    return this.split('').sort().pop();
 };
 
 var fs = require('fs'),
