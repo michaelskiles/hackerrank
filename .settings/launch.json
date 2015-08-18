@@ -14,6 +14,20 @@
 			"program": "problems/serviceLane/serviceLane.js",
 			"cwd": "problems/serviceLane",
 			"stopOnEntry": false
+		},
+		{
+			"name": "Simple Array Sum",
+			"type": "node",
+			"program": "problems/simpleArraySum/simpleArraySum.js",
+			"cwd": "problems/simpleArraySum",
+			"stopOnEntry": false
+		},
+				{
+			"name": "Very Big Sum",
+			"type": "node",
+			"program": "problems/veryBigSum/veryBigSum.js",
+			"cwd": "problems/veryBigSum",
+			"stopOnEntry": false
 		}
 	]
 }
