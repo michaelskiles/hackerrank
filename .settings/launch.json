@@ -2,10 +2,24 @@
 	"version": "0.7.0",
 	"configurations": [
 		{
+			"name": "Diagonal Difference",
+			"type": "node",
+			"program": "problems/diagonalDifference/diagonalDifference.js",
+			"cwd": "problems/diagonalDifference",
+			"stopOnEntry": false
+		},
+		{
 			"name": "Love Letter",
 			"type": "node",
 			"program": "problems/loveLetter/loveLetter.js",
 			"cwd": "problems/loveLetter",
+			"stopOnEntry": false
+		},
+		{
+			"name": "Plus Minus",
+			"type": "node",
+			"program": "problems/plusMinus/plusMinus.js",
+			"cwd": "problems/plusMinus",
 			"stopOnEntry": false
 		},
 		{
@@ -22,7 +36,7 @@
 			"cwd": "problems/simpleArraySum",
 			"stopOnEntry": false
 		},
-				{
+		{
 			"name": "Very Big Sum",
 			"type": "node",
 			"program": "problems/veryBigSum/veryBigSum.js",
